@@ -242,9 +242,14 @@ export default function App() {
       />
 
       {/* Main Catalog Section */}
-      <main id="catalog-section" className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <main id="catalog-section" className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative overflow-hidden">
+        {/* Subtle Luxury Catalog Watermark */}
+        <div className="absolute right-[-6%] top-20 w-[420px] opacity-[0.025] pointer-events-none select-none z-0">
+          <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-full h-auto object-contain" />
+        </div>
+
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-[#e8d9ca] gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-[#e8d9ca] gap-4 relative z-10">
           <div>
             <div className="flex items-center gap-1.5 text-[#d0883e] text-xs font-bold uppercase tracking-[0.2em] mb-1">
               <Sparkles className="w-3.5 h-3.5 text-[#d6ad60]" />
@@ -335,7 +340,14 @@ export default function App() {
 
         {/* Product Grid: 2 columns in mobile, 4 columns in desktop as requested */}
         {filteredProducts.length === 0 ? (
-          <div className="bg-white rounded-lg border border-[#e8d9ca] p-12 text-center my-8">
+          <div className="bg-white rounded-lg border border-[#e8d9ca] p-12 text-center my-8 relative overflow-hidden">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 opacity-80">
+              <img
+                src="/images/brand/1. LOGO CUADRADO.png"
+                alt="Rommariel Joyas"
+                className="w-full h-full object-contain"
+              />
+            </div>
             <p className="font-serif-luxury text-lg font-bold text-[#673c0f] mb-2">
               No se encontraron piezas con estos filtros
             </p>
@@ -372,8 +384,13 @@ export default function App() {
         />
 
         {/* Wholesale & Commercial Banner */}
-        <div className="mt-14 bg-gradient-to-r from-[#673c0f] via-[#522e08] to-[#3a1e04] rounded-lg p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-[#855019]/40 shadow-xl">
-          <div className="max-w-xl text-center md:text-left">
+        <div className="relative overflow-hidden mt-14 bg-gradient-to-r from-[#673c0f] via-[#522e08] to-[#3a1e04] rounded-lg p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 border border-[#855019]/40 shadow-xl">
+          {/* Subtle Watermark in Wholesale Banner */}
+          <div className="absolute right-[-15px] top-1/2 -translate-y-1/2 w-64 sm:w-80 opacity-[0.05] pointer-events-none select-none z-0">
+            <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-full h-auto object-contain brightness-200" />
+          </div>
+
+          <div className="max-w-xl text-center md:text-left relative z-10">
             <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#d6ad60] block mb-1">
               Oportunidad Comercial • 17 Departamentos
             </span>

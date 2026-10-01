@@ -16,17 +16,33 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenInstitutional
 }) => {
   return (
-    <footer id="main-footer" className="bg-[#4a2b0a] text-[#e8d9ca] pt-16 pb-10 border-t border-[#381f06]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer id="main-footer" className="relative bg-[#4a2b0a] text-[#e8d9ca] pt-16 pb-10 border-t border-[#381f06] overflow-hidden">
+      {/* Monumental Watermark in Footer */}
+      <div className="absolute right-[-5%] bottom-[-10%] w-[380px] sm:w-[520px] md:w-[620px] opacity-[0.035] pointer-events-none select-none z-0">
+        <img
+          src="/images/brand/1. LOGO CUADRADO.png"
+          alt=""
+          className="w-full h-auto object-contain brightness-200"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Brand & Slogan Banner */}
         <div className="pb-12 border-b border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6">
-            <img 
-              src="/images/brand/LOGO BLANCO.png" 
-              alt="Rommariel Joyas Logo Blanco" 
-              className="h-12 sm:h-14 w-auto min-w-[150px] sm:min-w-[190px] object-contain shrink-0 drop-shadow"
-            />
+            <div className="flex items-center gap-3">
+              <img 
+                src="/images/brand/1. LOGO CUADRADO.png" 
+                alt="Emblema Rommariel" 
+                className="h-12 sm:h-14 w-auto object-contain shrink-0 drop-shadow brightness-110"
+              />
+              <img 
+                src="/images/brand/LOGO BLANCO.png" 
+                alt="Rommariel Joyas Logo Blanco" 
+                className="h-11 sm:h-12 w-auto min-w-[140px] sm:min-w-[170px] object-contain shrink-0 drop-shadow"
+              />
+            </div>
             <div>
               <p className="text-xs sm:text-sm font-serif-luxury italic text-[#d6ad60]">
                 &ldquo;Brilla con nosotros • La joya eres tú, nosotros tu complemento&rdquo;
@@ -203,7 +219,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Col 4: Garantía & Pagos Ueno */}
           <div>
             <h4 className="font-serif-luxury text-sm font-semibold tracking-wider uppercase text-white mb-4 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#d6ad60]" />
+              <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-4 h-4 object-contain brightness-125" />
               Garantía &amp; Pagos
             </h4>
             <div className="space-y-3 text-xs text-[#e8d9ca]/85">

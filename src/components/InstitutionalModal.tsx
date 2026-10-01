@@ -33,21 +33,30 @@ export const InstitutionalModal: React.FC<InstitutionalModalProps> = ({
       >
         {/* Header */}
         <div className="p-4 sm:p-6 bg-[#673c0f] text-white border-b border-[#522e08] flex items-start justify-between">
-          <div>
-            <div className="flex items-center gap-2 mb-1">
-              <span className="text-[11px] uppercase tracking-[0.25em] text-[#d6ad60] font-semibold">
-                AJM Import EAS
-              </span>
-              <span className="text-[10px] px-2 py-0.5 bg-white/10 text-[#e8d9ca] rounded">
-                Fundación {config.foundationYear}
-              </span>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-md bg-white/10 p-1.5 border border-[#d6ad60]/40 shrink-0 flex items-center justify-center">
+              <img
+                src="/images/brand/1. LOGO CUADRADO.png"
+                alt="Rommariel Joyas"
+                className="w-full h-full object-contain drop-shadow"
+              />
             </div>
-            <h2 className="font-serif-luxury text-xl sm:text-2xl font-bold tracking-tight text-white">
-              Rommariel Joyas
-            </h2>
-            <p className="text-xs text-[#e8d9ca]/80 italic mt-0.5">
-              {config.slogans[0]} • {config.slogans[1]}
-            </p>
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-[11px] uppercase tracking-[0.25em] text-[#d6ad60] font-semibold">
+                  AJM Import EAS
+                </span>
+                <span className="text-[10px] px-2 py-0.5 bg-white/10 text-[#e8d9ca] rounded">
+                  Fundación {config.foundationYear}
+                </span>
+              </div>
+              <h2 className="font-serif-luxury text-xl sm:text-2xl font-bold tracking-tight text-white">
+                Rommariel Joyas
+              </h2>
+              <p className="text-xs text-[#e8d9ca]/80 italic mt-0.5">
+                {config.slogans[0]} • {config.slogans[1]}
+              </p>
+            </div>
           </div>
 
           <button
@@ -113,10 +122,15 @@ export const InstitutionalModal: React.FC<InstitutionalModalProps> = ({
           </button>
         </div>
 
-        {/* Tab Content Body */}
-        <div className="p-5 sm:p-6 overflow-y-auto space-y-6 text-xs text-[#673c0f]/85 leading-relaxed">
+        {/* Tab Content Body with Institutional Luxury Watermark */}
+        <div className="p-5 sm:p-6 overflow-y-auto space-y-6 text-xs text-[#673c0f]/85 leading-relaxed relative">
+          {/* Subtle Institutional Watermark */}
+          <div className="absolute right-[-10px] bottom-[-10px] w-64 sm:w-80 opacity-[0.035] pointer-events-none select-none z-0">
+            <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-full h-auto object-contain" />
+          </div>
+
           {activeTab === 'historia' && (
-            <div className="space-y-4">
+            <div className="space-y-4 relative z-10">
               <div className="border-l-2 border-[#d6ad60] pl-3 py-1">
                 <h3 className="font-serif-luxury text-base sm:text-lg font-bold text-[#673c0f]">
                   Más de 50 años acompañando el estilo de los paraguayos

@@ -67,13 +67,18 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       <div className="fixed inset-y-0 right-0 max-w-full flex pl-4 sm:pl-10">
         <div
           id="cart-drawer-panel"
-          className="w-screen max-w-md bg-white shadow-2xl flex flex-col justify-between border-l border-[#e8d9ca] animate-slideInRight"
+          className="w-screen max-w-md bg-white shadow-2xl flex flex-col justify-between border-l border-[#e8d9ca] animate-slideInRight relative overflow-hidden"
         >
+          {/* Subtle Luxury Watermark in Cart Drawer */}
+          <div className="absolute right-[-15%] bottom-[12%] w-72 sm:w-80 opacity-[0.035] pointer-events-none select-none z-0">
+            <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-full h-auto object-contain" />
+          </div>
+
           {/* Header */}
-          <div className="p-4 sm:p-5 border-b border-[#e8d9ca] bg-[#FAF7F4] flex items-center justify-between">
+          <div className="p-4 sm:p-5 border-b border-[#e8d9ca] bg-[#FAF7F4] flex items-center justify-between relative z-10">
             <div className="flex items-center gap-2">
-              <div className="p-2 bg-[#673c0f] text-[#d6ad60] rounded-full">
-                <ShoppingBag className="w-4 h-4" />
+              <div className="w-9 h-9 rounded-full bg-[#FAF7F4] p-1 border border-[#d6ad60]/50 flex items-center justify-center shrink-0">
+                <img src="/images/brand/1. LOGO CUADRADO.png" alt="Rommariel" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h2 className="font-serif-luxury text-base sm:text-lg font-bold text-[#673c0f]">
@@ -109,7 +114,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
           {/* Free Shipping Progress Indicator */}
           {cart.length > 0 && (
-            <div className="bg-[#673c0f] text-white px-4 py-2 text-xs flex flex-col gap-1">
+            <div className="bg-[#673c0f] text-white px-4 py-2 text-xs flex flex-col gap-1 relative z-10">
               <div className="flex justify-between items-center text-[11px]">
                 <span className="text-[#e8d9ca] font-medium flex items-center gap-1">
                   <Truck className="w-3.5 h-3.5 text-[#d6ad60]" />
@@ -131,11 +136,17 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
           )}
 
           {/* Scrollable Content Area */}
-          <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4">
+          <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4 relative z-10">
             {cart.length === 0 ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12 px-4">
-                <div className="w-16 h-16 rounded-full bg-[#e8d9ca]/30 flex items-center justify-center text-[#d0883e] mb-4 border border-[#e8d9ca]">
-                  <ShoppingBag className="w-8 h-8" />
+                <div className="relative mb-5 group">
+                  <div className="w-20 h-20 rounded-full bg-[#FAF7F4] p-3 flex items-center justify-center border border-[#d6ad60]/50 shadow-sm">
+                    <img
+                      src="/images/brand/1. LOGO CUADRADO.png"
+                      alt="Rommariel Joyas"
+                      className="w-full h-full object-contain drop-shadow-sm"
+                    />
+                  </div>
                 </div>
                 <h3 className="font-serif-luxury text-lg font-bold text-[#673c0f] mb-1">
                   Tu bolsa está vacía

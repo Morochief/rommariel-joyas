@@ -9,14 +9,35 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
   onOpenInstitutional
 }) => {
   return (
-    <section id="heritage-section" className="relative py-20 sm:py-28 bg-[#FAF7F2] text-[#3A2B1D] border-t border-b border-[#E8D9CA]">
+    <section id="heritage-section" className="relative py-20 sm:py-28 bg-[#FAF7F2] text-[#3A2B1D] border-t border-b border-[#E8D9CA] overflow-hidden">
       {/* Subtle Background Pattern / Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(#d6ad60_0.7px,transparent_0.7px)] [background-size:24px_24px] opacity-25 pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Monumental Brand Watermark in Background */}
+      <div className="absolute right-[-8%] sm:right-[2%] top-1/2 -translate-y-1/2 w-[380px] sm:w-[580px] md:w-[700px] opacity-[0.045] pointer-events-none select-none z-0">
+        <img
+          src="/images/brand/1. LOGO CUADRADO.png"
+          alt=""
+          className="w-full h-auto object-contain"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Editorial Top Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+          {/* Brand Seal / Crest */}
+          <div className="flex justify-center mb-5">
+            <div className="relative group">
+              <div className="absolute -inset-1.5 bg-[#d6ad60]/30 rounded-full blur-xs opacity-70 group-hover:opacity-100 transition-opacity" />
+              <img
+                src="/images/brand/1. LOGO CUADRADO.png"
+                alt="Emblema Rommariel Joyas"
+                className="relative w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-[0_4px_12px_rgba(103,60,15,0.15)] transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#e8d9ca]/60 border border-[#cda174]/50 text-[#673c0f] text-xs font-semibold tracking-[0.25em] uppercase mb-4">
             <Sparkles className="w-3.5 h-3.5 text-[#d0883e]" />
             <span>Tradición &amp; Calidad • Rommariel Joyas</span>

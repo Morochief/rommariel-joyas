@@ -38,17 +38,22 @@ export const RingSizeGuideModal: React.FC<RingSizeGuideModalProps> = ({ isOpen, 
         id="ring-size-guide-modal"
         className="relative bg-white w-full max-w-2xl rounded-md shadow-2xl border border-[#d6ad60]/50 p-5 sm:p-7 overflow-hidden max-h-[92vh] flex flex-col"
       >
+        {/* Subtle Luxury Watermark in Ring Size Modal */}
+        <div className="absolute right-[-15px] bottom-[-15px] w-56 sm:w-72 opacity-[0.035] pointer-events-none select-none z-0">
+          <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-full h-auto object-contain" />
+        </div>
+
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-[#cda174] hover:text-[#673c0f] rounded-full hover:bg-[#FAF7F4] transition-colors"
+          className="absolute top-4 right-4 p-2 text-[#cda174] hover:text-[#673c0f] rounded-full hover:bg-[#FAF7F4] transition-colors relative z-20"
           aria-label="Cerrar guía"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-2 mb-2">
-          <div className="p-2 bg-[#FAF7F4] text-[#d0883e] rounded-full">
-            <Ruler className="w-5 h-5" />
+        <div className="flex items-center gap-3 mb-2 relative z-10">
+          <div className="w-10 h-10 rounded-full bg-[#FAF7F4] p-1.5 border border-[#d6ad60]/50 flex items-center justify-center shrink-0">
+            <img src="/images/brand/1. LOGO CUADRADO.png" alt="Rommariel" className="w-full h-full object-contain" />
           </div>
           <div>
             <h2 className="font-serif-luxury text-xl sm:text-2xl font-bold text-[#673c0f]">

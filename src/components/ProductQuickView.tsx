@@ -239,22 +239,30 @@ export const ProductQuickView: React.FC<ProductQuickViewProps> = ({
               {product.description}
             </p>
 
-            {/* Technical Specs List */}
-            <div className="bg-[#e8d9ca]/25 p-3 rounded border border-[#e8d9ca] mb-4 text-[11px] sm:text-xs space-y-1.5 text-[#673c0f]">
+            {/* Technical Specs List with Brand Watermark */}
+            <div className="relative overflow-hidden bg-[#e8d9ca]/25 p-3.5 rounded border border-[#e8d9ca] mb-4 text-[11px] sm:text-xs space-y-1.5 text-[#673c0f]">
+              {/* Subtle Brand Watermark inside Specs */}
+              <div className="absolute right-[-10px] bottom-[-10px] w-28 h-28 opacity-[0.06] pointer-events-none select-none z-0">
+                <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-full h-full object-contain" />
+              </div>
+
               {product.sku && (
-                <div className="flex justify-between items-center gap-2">
+                <div className="flex justify-between items-center gap-2 relative z-10">
                   <span className="text-[#cda174] shrink-0">Código / Modelo:</span>
                   <span className="font-mono font-semibold text-[#673c0f] text-right truncate">{product.sku}</span>
                 </div>
               )}
               {product.brand && (
-                <div className="flex justify-between items-center gap-2">
+                <div className="flex justify-between items-center gap-2 relative z-10">
                   <span className="text-[#cda174] shrink-0">Marca Oficial:</span>
-                  <span className="font-semibold text-[#673c0f] text-right truncate">{product.brand}</span>
+                  <span className="font-semibold text-[#673c0f] text-right truncate flex items-center gap-1.5">
+                    <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-3.5 h-3.5 object-contain inline-block" />
+                    {product.brand}
+                  </span>
                 </div>
               )}
               {product.layers && (
-                <div className="flex justify-between items-center gap-2">
+                <div className="flex justify-between items-center gap-2 relative z-10">
                   <span className="text-[#cda174] shrink-0">Enchapado:</span>
                   <span className="font-semibold text-[#673c0f] text-right truncate">{product.layers}</span>
                 </div>

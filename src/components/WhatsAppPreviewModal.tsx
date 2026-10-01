@@ -59,13 +59,13 @@ export const WhatsAppPreviewModal: React.FC<WhatsAppPreviewModalProps> = ({
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-2 mb-3">
-          <div className="p-2 bg-[#E7F8EE] text-[#25D366] rounded-full">
-            <MessageCircle className="w-5 h-5" />
+        <div className="flex items-center gap-3 mb-3 relative z-10">
+          <div className="w-10 h-10 rounded-full bg-[#FAF7F4] p-1.5 border border-[#d6ad60]/50 flex items-center justify-center shrink-0">
+            <img src="/images/brand/1. LOGO CUADRADO.png" alt="Rommariel" className="w-full h-full object-contain" />
           </div>
           <div>
             <h2 className="font-serif-luxury text-lg font-bold text-[#673c0f]">
-              Vista Previa del Mensaje de WhatsApp
+              Pedido Oficial Rommariel Joyas
             </h2>
             <p className="text-xs text-[#cda174]">
               Destino: +{config.whatsappPhone} ({config.storeName})
@@ -73,9 +73,13 @@ export const WhatsAppPreviewModal: React.FC<WhatsAppPreviewModalProps> = ({
           </div>
         </div>
 
-        {/* WhatsApp Chat simulation bubble */}
-        <div className="flex-1 overflow-y-auto bg-[#E5DDD5] p-3.5 rounded-lg border border-[#D5CBC2] my-2">
-          <div className="bg-white p-3 rounded-lg shadow-sm text-xs font-mono text-[#673c0f] whitespace-pre-wrap leading-relaxed max-w-full">
+        {/* WhatsApp Chat simulation bubble with Brand Watermark */}
+        <div className="flex-1 overflow-y-auto bg-[#E5DDD5] p-3.5 rounded-lg border border-[#D5CBC2] my-2 relative overflow-hidden">
+          {/* Subtle Watermark */}
+          <div className="absolute right-2 bottom-2 w-48 opacity-[0.05] pointer-events-none select-none z-0">
+            <img src="/images/brand/1. LOGO CUADRADO.png" alt="" className="w-full h-auto object-contain" />
+          </div>
+          <div className="bg-white p-3 rounded-lg shadow-sm text-xs font-mono text-[#673c0f] whitespace-pre-wrap leading-relaxed max-w-full relative z-10">
             {rawMessage}
           </div>
         </div>
