@@ -134,9 +134,19 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
         </div>
 
         {/* Storytelling Split Card with Quote & Actions */}
-        <div className="bg-[#673c0f] text-white rounded-xl p-8 sm:p-12 lg:p-14 shadow-xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+        <div className="relative overflow-hidden bg-[#673c0f] text-white rounded-xl p-8 sm:p-12 lg:p-14 shadow-xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-center border border-[#855019]/40">
           
-          <div className="lg:col-span-2 space-y-4">
+          {/* Marca de agua elegante de fondo */}
+          <div className="absolute right-[-20px] sm:right-6 lg:right-12 top-1/2 -translate-y-1/2 w-72 sm:w-88 lg:w-[420px] opacity-[0.055] pointer-events-none select-none z-0">
+            <img
+              src="/images/brand/1. LOGO CUADRADO.png"
+              alt=""
+              aria-hidden="true"
+              className="w-full h-auto object-contain brightness-200 drop-shadow-2xl"
+            />
+          </div>
+
+          <div className="relative z-10 lg:col-span-2 space-y-4">
             <span className="text-[#d6ad60] text-xs font-semibold uppercase tracking-[0.25em] block">
               AJM Import EAS • Luque, Paraguay
             </span>
@@ -149,7 +159,7 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
             </p>
           </div>
 
-          <div className="flex flex-col gap-3 justify-center">
+          <div className="relative z-10 flex flex-col gap-3 justify-center">
             <button
               onClick={() => onOpenInstitutional('historia')}
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#d6ad60] hover:bg-[#d0883e] text-[#673c0f] font-bold text-xs uppercase tracking-[0.16em] rounded-sm transition-all shadow-md active:scale-98"
