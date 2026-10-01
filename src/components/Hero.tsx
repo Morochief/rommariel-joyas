@@ -55,7 +55,7 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Luxury Main Heading */}
           <h1 className="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight text-white leading-[1.18] mb-3 sm:mb-4">
             Brilla con nosotros. <br />
-            <span className="italic text-[#d6ad60] font-normal">La joya eres tú, nosotros tu complemento.</span>
+            <span className="italic text-[#d6ad60] font-normal">La Joya eres tú, Rommariel tu complemento.</span>
           </h1>
 
           <p className="text-xs sm:text-sm md:text-base text-[#e8d9ca]/90 leading-relaxed mb-6 sm:mb-8 max-w-xl font-light">

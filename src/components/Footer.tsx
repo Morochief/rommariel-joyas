@@ -45,7 +45,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
             <div>
               <p className="text-xs sm:text-sm font-serif-luxury italic text-[#d6ad60]">
-                &ldquo;Brilla con nosotros • La joya eres tú, nosotros tu complemento&rdquo;
+                &ldquo;Brilla con nosotros • La Joya eres tú, Rommariel tu complemento&rdquo;
               </p>
               <p className="text-[11px] text-[#e8d9ca]/70 font-light mt-0.5">
                 AJM Import EAS • RUC 80159811-7 • Luque, Paraguay

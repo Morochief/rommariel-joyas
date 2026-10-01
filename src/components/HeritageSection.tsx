@@ -48,7 +48,7 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
           </h2>
 
           <p className="font-serif-luxury italic text-lg sm:text-xl text-[#d0883e] mb-6">
-            &ldquo;La joya eres tú, nosotros tu complemento&rdquo;
+            &ldquo;La Joya eres tú, Rommariel tu complemento&rdquo;
           </p>
 
           <p className="text-sm sm:text-base text-[#673c0f]/80 leading-relaxed max-w-2xl mx-auto font-light">

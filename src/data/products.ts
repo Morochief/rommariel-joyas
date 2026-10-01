@@ -12,7 +12,7 @@ export const STORE_CONFIG: StoreConfig = {
   foundationYear: 2018,
   slogans: [
     'Brilla con nosotros',
-    'La joya eres tú, nosotros tu complemento',
+    'La Joya eres tú, Rommariel tu complemento',
     'Tu estilo, tu esencia'
   ],
   whatsappPhone: '595994398050', // Ventas y pedidos tienda online (0994 398 050)
