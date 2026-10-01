@@ -1,0 +1,112 @@
+import { Product } from '../types';
+
+export const productsAT03: Product[] = [
+  {
+    id: 23,
+    sku: 'AT03-1.CELE',
+    name: 'Aro Tapa Corona con Circón Celeste & Halo Blanco',
+    commercialPresentation: 'ARO TAPA ROMMARIEL AT03 ENCHAPADO EN ORO 18KL. CON CIRCON CELESTE Y BLANCO ALREDEDOR',
+    category: 'aros_tapa_at03',
+    categoryName: 'Aros Corona & Gemas',
+    price: 100800,
+    stock: 10,
+    stockPrev: 1,
+    brand: 'ROMMARIEL',
+    img: '/images/products/AT03/1. AT03-1.CELE.jpg',
+    secondaryImg: '/images/products/AT03/1. AT03-1.CELE.jpg',
+    material: 'Enchapado Oro 18k + Circones',
+    layers: '5 y 7 láminas de oro 18K',
+    hypoallergenic: true,
+    usage: 'Diario y Eventos',
+    description: 'El Aro Tapa Rommariel AT03 está elaborado con un enchapado en oro de 18K, con un diseño circular de 0,9 cm de diámetro que destaca por un circón central en color celeste rodeado por una delicada hilera de circones blancos. Cuenta con un enchapado de 5 y 7 láminas de oro y es hipoalergénico, por lo que resulta apto para pieles sensibles.',
+    isNew: true,
+    isBestseller: true,
+    specs: {
+      karats: 'Enchapado en oro de 18K (5 y 7 láminas)',
+      dimensions: '0,9 cm de diámetro',
+      gemstone: 'Circón celeste central y halo de circones blancos',
+      warranty: 'Cambio dentro de 5 días hábiles'
+    }
+  },
+  {
+    id: 24,
+    sku: 'AT03-1.FUC',
+    name: 'Aro Tapa Corona con Circón Fucsia & Halo Blanco',
+    commercialPresentation: 'ARO TAPA ROMMARIEL AT03 ENCHAPADO EN ORO 18KL. CON CIRCON FUCSIA Y BLANCO ALREDEDOR',
+    category: 'aros_tapa_at03',
+    categoryName: 'Aros Corona & Gemas',
+    price: 100800,
+    stock: 10,
+    stockPrev: 1,
+    brand: 'ROMMARIEL',
+    img: '/images/products/AT03/4. AT03-1.FUC.jpg',
+    secondaryImg: '/images/products/AT03/5. AT03-1.FUC.jpg',
+    material: 'Enchapado Oro 18k + Circones',
+    layers: '5 y 7 láminas de oro 18K',
+    hypoallergenic: true,
+    usage: 'Diario y Eventos',
+    description: 'El Aro Tapa Rommariel AT03 está elaborado con un enchapado en oro de 18K, con un diseño circular de 0,9 cm de diámetro que destaca por un circón central en color fucsia rodeado por una delicada hilera de circones blancos. Cuenta con un enchapado de 5 y 7 láminas de oro y es hipoalergénico, por lo que resulta apto para pieles sensibles.',
+    isNew: false,
+    isBestseller: true,
+    specs: {
+      karats: 'Enchapado en oro de 18K (5 y 7 láminas)',
+      dimensions: '0,9 cm de diámetro',
+      gemstone: 'Circón fucsia central y halo de circones blancos',
+      warranty: 'Cambio dentro de 5 días hábiles'
+    }
+  },
+  {
+    id: 25,
+    sku: 'AT03-2.BL',
+    name: 'Aro Tapa Esmaltado Blanco con Circones',
+    commercialPresentation: 'ARO TAPA ROMMARIEL AT03 ENCHAPADO EN ORO 18KL. ESMALTADO EN BLANCO CON CIRCON ALREDEDOR',
+    category: 'aros_tapa_at03',
+    categoryName: 'Aros Corona & Gemas',
+    price: 100800,
+    stock: 10,
+    stockPrev: 1,
+    brand: 'ROMMARIEL',
+    img: '/images/products/AT03/7. AT03-2.BL.jpg',
+    secondaryImg: '/images/products/AT03/8. AT03-2.BL.jpg',
+    material: 'Enchapado Oro 18k + Esmaltado',
+    layers: '5 y 7 láminas de oro 18K',
+    hypoallergenic: true,
+    usage: 'Diario y Eventos',
+    description: 'El Aro Tapa Rommariel AT03 está elaborado con un enchapado en oro de 18K, con un diseño circular de 1 cm de diámetro que combina un acabado esmaltado en color blanco con un contorno de pequeños circones que aportan un sutil brillo.',
+    isNew: true,
+    isBestseller: false,
+    specs: {
+      karats: 'Enchapado en oro de 18K (5 y 7 láminas)',
+      dimensions: '1 cm de diámetro',
+      gemstone: 'Esmaltado blanco con circones periféricos',
+      warranty: 'Cambio dentro de 5 días hábiles'
+    }
+  },
+  {
+    id: 26,
+    sku: 'AT03-3.CR',
+    name: 'Aro Tapa Corazón con Circones Pavé',
+    commercialPresentation: 'ARO TAPA ROMMARIEL AT03 ENCHAPADO EN ORO 18KL. FORMA DE CORAZON CON CIRCONES ALREDEDOR',
+    category: 'aros_tapa_at03',
+    categoryName: 'Aros Corona & Gemas',
+    price: 100800,
+    stock: 10,
+    stockPrev: 1,
+    brand: 'ROMMARIEL',
+    img: '/images/products/AT03/10. AT03-3.CR.jpg',
+    secondaryImg: '/images/products/AT03/11. AT03-3.CR.jpg',
+    material: 'Enchapado Oro 18k + Circones',
+    layers: '5 y 7 láminas de oro 18K',
+    hypoallergenic: true,
+    usage: 'Diario y Eventos',
+    description: 'El Aro Tapa Rommariel AT03 está elaborado con un enchapado en oro de 18K, con un diseño en forma de corazón de 0,8 cm de diámetro delineado con pequeños circones en color cristal que le dan un toque brillante y delicado.',
+    isNew: false,
+    isBestseller: true,
+    specs: {
+      karats: 'Enchapado en oro de 18K (5 y 7 láminas)',
+      dimensions: '0,8 cm de diámetro',
+      gemstone: 'Circones en silueta de corazón',
+      warranty: 'Cambio dentro de 5 días hábiles'
+    }
+  }
+];

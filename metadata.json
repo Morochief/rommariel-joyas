@@ -1,0 +1,6 @@
+{
+  "name": "Rommariel Joyas - Catálogo y Carrito WhatsApp",
+  "description": "E-commerce de Rommariel Joyas con catálogo en Guaraníes (PYG), carrito interactivo y checkout directo a WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

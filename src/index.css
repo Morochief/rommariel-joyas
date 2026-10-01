@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rommariel-cream: #e8d9ca;
+  --color-rommariel-sand: #cda174;
+  --color-rommariel-gold: #d6ad60;
+  --color-rommariel-amber: #d0883e;
+  --color-rommariel-espresso: #673c0f;
+}
+
+:root {
+  --rm-cream: #e8d9ca;
+  --rm-sand: #cda174;
+  --rm-gold: #d6ad60;
+  --rm-amber: #d0883e;
+  --rm-espresso: #673c0f;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF8F5;
+    color: #3A2B1D;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.18em;
+  }
+}
+
+/* Custom scrollbar styled with official palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8d9ca;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6ad60;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d0883e;
+}
+
+/* Swarovski-Inspired Jewelry Animations */
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes goldGlow {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(103, 60, 15, 0.08);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(214, 173, 96, 0.28);
+  }
+}
+
+@keyframes sparkleTwinkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.2) rotate(15deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(214, 173, 96, 0.8));
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmerSweep 2.4s ease-in-out infinite;
+}
+
+.animate-gold-glow {
+  animation: goldGlow 3s ease-in-out infinite;
+}
+
+.animate-twinkle {
+  animation: sparkleTwinkle 2s ease-in-out infinite;
+}
+
+.animate-float-soft {
+  animation: floatSoft 3.5s ease-in-out infinite;
+}
+
+/* Shimmer overlay effect for product cards on hover */
+.luxury-shimmer-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-shimmer-container::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 65%
+  );
+  transform: translateX(-150%) rotate(25deg);
+  pointer-events: none;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.luxury-shimmer-container:hover::after {
+  opacity: 1;
+  animation: shimmerSweep 1.2s ease-out;
+}
+
