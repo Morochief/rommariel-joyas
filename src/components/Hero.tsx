@@ -59,7 +59,7 @@ export const Hero: React.FC<HeroProps> = ({
           </h1>
 
           <p className="text-xs sm:text-sm md:text-base text-[#e8d9ca]/90 leading-relaxed mb-6 sm:mb-8 max-w-xl font-light">
-            Líneas exclusivas en enchapado en oro de 18K (5 a 7 láminas) y piezas en plata italiana 925. Todos nuestros productos son hipoalergénicos y aptos para piel sensible. Venta exclusiva online con envíos a todo el país.
+            Líneas exclusivas en enchapado en oro de 18K (3 y 5 láminas) y piezas en plata italiana 925. Todos nuestros productos son hipoalergénicos y aptos para piel sensible. Venta exclusiva online con envíos (costo estándar contempla Dpto. Central y envíos al interior).
           </p>
 
           {/* Action CTAs */}
@@ -99,7 +99,7 @@ export const Hero: React.FC<HeroProps> = ({
                 <p className="text-[11px] sm:text-xs font-semibold tracking-wide uppercase text-white group-hover:text-[#d6ad60] transition-colors truncate">
                   Enchapado Oro 18k
                 </p>
-                <p className="text-[10px] sm:text-[11px] text-[#cda174] truncate">5-7 láminas • Hipoalergénico</p>
+                <p className="text-[10px] sm:text-[11px] text-[#cda174] truncate">3-5 láminas • Hipoalergénico</p>
               </div>
             </div>
 
@@ -109,9 +109,9 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
               <div className="min-w-0">
                 <p className="text-[11px] sm:text-xs font-semibold tracking-wide uppercase text-white truncate">
-                  Envíos a Todo el País
+                  Envíos a Dpto. Central
                 </p>
-                <p className="text-[10px] sm:text-[11px] text-[#cda174] truncate">Asunción e Interior (17 dptos)</p>
+                <p className="text-[10px] sm:text-[11px] text-[#cda174] truncate">Y despachos al Interior</p>
               </div>
             </div>
 

@@ -33,7 +33,7 @@ export function buildWhatsAppMessage(
   msg += `- Subtotal Productos: ${formatGuaranies(subtotal)}\n`;
   
   if (shippingCost === 0) {
-    msg += `- Envio: *GRATIS* (Supera ${formatGuaranies(config.freeShippingThreshold)})\n`;
+    msg += `- Envio: *GRATIS* (Promo Dpto. Central - Supera ${formatGuaranies(config.freeShippingThreshold)})\n`;
   } else {
     msg += `- Costo de Envio: ${formatGuaranies(shippingCost)}\n`;
   }
@@ -43,12 +43,12 @@ export function buildWhatsAppMessage(
   msg += `*DATOS DE CONFIRMACION:*\n`;
   msg += `- *Nombre:* ${orderDetails.customerName.trim() || '[Pendiente de confirmar]'}\n`;
   msg += `- *Telefono/WA:* ${orderDetails.phone.trim() || '[Mismo numero de chat]'}\n`;
-  msg += `- *Ciudad:* ${orderDetails.city.trim() || 'Asuncion / Gran Asuncion'}\n`;
+  msg += `- *Ciudad:* ${orderDetails.city.trim() || 'Asuncion / Depto. Central'}\n`;
   msg += `- *Direccion de entrega:* ${orderDetails.address.trim() || '[Coordinar por chat]'}\n`;
 
   const deliveryLabels: Record<string, string> = {
-    delivery_asuncion: 'Delivery a Domicilio (Asuncion y Gran Asuncion)',
-    envio_interior: 'Envio al Interior (Transportadora Asegurada)'
+    delivery_asuncion: 'Delivery a Domicilio (Asuncion y Depto. Central)',
+    envio_interior: 'Envio al Interior (Transportadora Asegurada - despacho Luque)'
   };
   msg += `- *Tipo de entrega:* ${deliveryLabels[orderDetails.deliveryType] || 'Delivery'}\n`;
 

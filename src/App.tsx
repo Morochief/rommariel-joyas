@@ -392,13 +392,13 @@ export default function App() {
 
           <div className="max-w-xl text-center md:text-left relative z-10">
             <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#d6ad60] block mb-1">
-              Oportunidad Comercial • 17 Departamentos
+              Oportunidad Comercial • Ventas Mayoristas
             </span>
             <h3 className="font-serif-luxury text-xl sm:text-2xl font-bold text-white mb-2">
               ¿Deseas revender o comprar al por mayor?
             </h3>
             <p className="text-xs sm:text-sm text-[#e8d9ca]/85 font-light leading-relaxed">
-              Atención directa para mayoristas y revendedores en todo el país. Piezas enchapadas en Oro 18K (5 a 7 láminas) 100% hipoalergénicas con precios preferenciales y envíos a los 17 departamentos.
+              Atención directa para mayoristas y comercios. Modelos surtidos en blísters (exhibidores) en Oro 18K (3 y 5 láminas) 100% hipoalergénicos con asesoramiento por rubro y visitas comerciales a tu negocio.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">

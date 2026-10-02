@@ -92,7 +92,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </h3>
           <div className="flex items-center gap-1.5 mt-1 text-[10px] sm:text-[11px] text-[#673c0f]/75">
             <span className="w-1.5 h-1.5 rounded-full bg-[#d6ad60] shrink-0" />
-            <span className="truncate">5-7 láminas • Hipoalergénico</span>
+            <span className="truncate">3-5 láminas • Hipoalergénico</span>
           </div>
         </div>
 

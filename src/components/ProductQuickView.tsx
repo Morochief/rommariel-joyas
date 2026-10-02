@@ -316,7 +316,7 @@ export const ProductQuickView: React.FC<ProductQuickViewProps> = ({
                   Material &amp; Calidad
                 </span>
                 <span className="text-xs font-bold text-[#673c0f]">
-                  Enchapado en Oro 18K (5 a 7 láminas)
+                  Enchapado en Oro 18K (3 y 5 láminas)
                 </span>
               </div>
               <span className="text-[10px] font-semibold uppercase tracking-wider text-[#25D366] bg-green-50 border border-green-200 px-2 py-0.5 rounded">

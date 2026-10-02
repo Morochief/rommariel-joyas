@@ -66,10 +66,10 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                 <Award className="w-6 h-6" />
               </div>
               <h3 className="font-serif-luxury text-lg font-semibold text-[#673c0f] mb-2 leading-snug">
-                Enchapado en Oro 18K (5 a 7 Láminas)
+                Enchapado en Oro 18K (3 y 5 Láminas)
               </h3>
               <p className="text-xs sm:text-sm text-[#673c0f]/75 font-light leading-relaxed">
-                Piezas elaboradas con entre 5 y 7 láminas de oro de 18 quilates, buscando ofrecer productos de excelente terminación y durabilidad.
+                Piezas elaboradas con entre 3 y 5 láminas de oro de 18 quilates, buscando ofrecer productos de excelente terminación y durabilidad.
               </p>
             </div>
             <span className="inline-block text-[11px] uppercase tracking-widest text-[#d0883e] font-semibold mt-4">

@@ -119,9 +119,9 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <span className="text-[#e8d9ca] font-medium flex items-center gap-1">
                   <Truck className="w-3.5 h-3.5 text-[#d6ad60]" />
                   {freeShippingRemaining === 0 ? (
-                    <span>¡Felicidades! Tenés <strong>Envío Gratis</strong></span>
+                    <span>¡Felicidades! Tenés <strong>Envío Gratis (Dpto. Central)</strong></span>
                   ) : (
-                    <span>Sumá <strong>{formatGuaranies(freeShippingRemaining)}</strong> para Envío Gratis</span>
+                    <span>Sumá <strong>{formatGuaranies(freeShippingRemaining)}</strong> para Envío Gratis (Dpto. Central)</span>
                   )}
                 </span>
                 <span className="text-[#e8d9ca]/80">{freeShippingProgress}%</span>
@@ -325,14 +325,14 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                           className="w-full text-xs px-2.5 py-1.5 bg-white border border-[#e8d9ca] rounded focus:border-[#d6ad60] focus:outline-none text-[#673c0f]"
                         >
                           <option value="delivery_asuncion">
-                            Delivery Asunción / Gran Asunción (+{formatGuaranies(config.shippingCostAsuncion)})
+                            Delivery Asunción y Depto. Central (+{formatGuaranies(config.shippingCostAsuncion)})
                           </option>
                           <option value="envio_interior">
                             Envío al Interior por Transportadora (+{formatGuaranies(config.shippingCostInterior)})
                           </option>
                         </select>
-                        <p className="text-[10px] text-[#cda174] mt-1 italic">
-                          Venta exclusiva online. Envíos directos a todo el país desde nuestra oficina en Luque.
+                        <p className="text-[10px] text-[#cda174] mt-1 leading-tight">
+                          * El costo de entrega estándar contempla exclusivamente envíos a Asunción y Departamento Central. Para envíos al interior, el despacho se gestiona vía transportadora.
                         </p>
                       </div>
 

@@ -32,7 +32,7 @@ export interface Product {
   isBestseller?: boolean;
   stock?: number;
   stockPrev?: number;
-  layers?: string; // e.g. "5 y 7 láminas de oro 18K"
+  layers?: string; // e.g. "3 y 5 láminas de oro 18K"
   hypoallergenic?: boolean;
   usage?: string; // e.g. "Uso Diario", "Fiestas y Eventos"
   specs: {

@@ -152,10 +152,10 @@ export const InstitutionalModal: React.FC<InstitutionalModalProps> = ({
                 
                 <div className="space-y-1">
                   <p className="font-bold text-[#673c0f]">
-                    Enchapado en Oro 18K (5 a 7 Láminas)
+                    Enchapado en Oro 18K (3 y 5 Láminas)
                   </p>
                   <p className="text-[11px] sm:text-xs text-[#673c0f]/80">
-                    Piezas elaboradas con entre 5 y 7 láminas de oro de 18 quilates, buscando ofrecer productos de excelente terminación y durabilidad.
+                    Piezas elaboradas con entre 3 y 5 láminas de oro de 18 quilates, buscando ofrecer productos de excelente terminación y durabilidad.
                   </p>
                 </div>
 
@@ -256,11 +256,29 @@ export const InstitutionalModal: React.FC<InstitutionalModalProps> = ({
                   </div>
                 </div>
 
-                <div className="p-3 bg-[#e8d9ca]/25 border border-[#cda174]/40 rounded text-[11px] text-[#673c0f]">
-                  <p className="font-semibold mb-0.5">📦 Referencias Técnicas / SKUs:</p>
-                  <p className="text-[#673c0f]/80">
-                    Todas las piezas de nuestra tienda cuentan con un código de referencia único visible (ej: <code>Ref. AT02-1.RJ</code>, <code>Ref. AA03-1</code>). Podés ingresar estos códigos en el buscador o citarlos en tu pedido para una cotización mayorista inmediata.
-                  </p>
+                <div className="space-y-3 pt-2">
+                  <div className="p-3.5 bg-[#FAF7F4] border border-[#cda174]/60 rounded-lg text-xs text-[#673c0f] space-y-2">
+                    <div className="flex items-center gap-2 font-bold text-[#673c0f]">
+                      <Sparkles className="w-4 h-4 text-[#d0883e]" />
+                      <span>Modalidad Mayorista: Modelos Surtidos por Blíster</span>
+                    </div>
+                    <p className="text-[#673c0f]/90 leading-relaxed font-light">
+                      Para ventas mayoristas comercializamos <strong>modelos surtidos por blíster (exhibidores)</strong>. Para la primera compra del cliente, brindamos un <strong>asesoramiento personalizado previo</strong> de acuerdo al tipo y rubro de su negocio (boutiques, farmacias, salones de belleza, tiendas o cadenas), seleccionando las piezas más convenientes y de mayor rotación comercial.
+                    </p>
+                    <div className="pt-2 border-t border-[#cda174]/30 flex items-start gap-2 text-[11px] text-[#673c0f]/85">
+                      <Building2 className="w-4 h-4 text-[#d0883e] shrink-0 mt-0.5" />
+                      <span>
+                        <strong>Visitas Comerciales a Negocios:</strong> Si contás con un local comercial o negocio físico, <strong>te visitamos en tu propia localidad</strong> dondequiera que estés para presentarte la propuesta mayorista de forma directa.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-3 bg-[#e8d9ca]/25 border border-[#cda174]/40 rounded text-[11px] text-[#673c0f]">
+                    <p className="font-semibold mb-0.5 text-[#673c0f]">📦 Códigos de Referencia (SKUs):</p>
+                    <p className="text-[#673c0f]/80 leading-relaxed font-light">
+                      Los códigos de referencia únicos (ej: <code>Ref. AT02-1.RJ</code>, <code>Ref. AA03-1</code>) fueron creados <strong>únicamente para las ventas minoristas</strong> con el fin de identificar con precisión cada modelo individual en el catálogo online.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -350,8 +368,13 @@ export const InstitutionalModal: React.FC<InstitutionalModalProps> = ({
                 </p>
               </div>
 
-              <div className="p-3.5 bg-[#e8d9ca]/30 border border-[#cda174]/40 rounded text-xs text-[#673c0f]">
-                <strong>Importante:</strong> No contamos con showroom ni atención al público para exhibición de productos. Nuestra venta al cliente final se realiza exclusivamente de manera online con envíos a todo el país.
+              <div className="p-3.5 bg-[#e8d9ca]/30 border border-[#cda174]/40 rounded text-xs text-[#673c0f] space-y-1.5">
+                <p>
+                  <strong>Venta Exclusiva Online:</strong> No contamos con showroom ni atención al público para exhibición de productos en sede. Nuestra venta al cliente final se realiza exclusivamente online con despachos desde Luque.
+                </p>
+                <p className="text-[11px] text-[#673c0f]/80">
+                  * El costo de entrega estándar contempla exclusivamente los envíos a Asunción y Departamento Central. Para envíos al interior del país, el despacho se gestiona vía transportadora. En compras mayoristas con negocio físico, realizamos visitas comerciales presenciales en tu localidad.
+                </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

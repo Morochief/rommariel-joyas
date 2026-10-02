@@ -225,7 +225,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="space-y-3 text-xs text-[#e8d9ca]/85">
               <p className="flex items-center gap-2 text-white">
                 <Award className="w-4 h-4 text-[#d6ad60] shrink-0" />
-                <span>5 a 7 Láminas de Oro 18K</span>
+                <span>3 y 5 Láminas de Oro 18K</span>
               </p>
               <p className="flex items-center gap-2 text-white">
                 <ShieldCheck className="w-4 h-4 text-[#d6ad60] shrink-0" />
@@ -250,7 +250,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#e8d9ca]/70 gap-3">
           <p>© 2026 {config.storeName} • {config.companyName}. Todos los derechos reservados.</p>
           <div className="text-[11px] flex items-center gap-2">
-            <span className="text-[#d6ad60]">Envíos a todo el país • 17 Departamentos</span>
+            <span className="text-[#d6ad60]">Envíos a Dpto. Central & Despachos al Interior</span>
           </div>
         </div>
 
